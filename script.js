@@ -10,7 +10,9 @@ let selection = 0;
 fetch(url).then(el => el.json()).then(vl => storeData(vl,selection))
 
 const li = document.querySelectorAll('li')
-
+OneId.classList.add('active')
+TwoId.classList.remove('active')
+ThreeId.classList.remove('active')
 li.forEach((value) => 
 {
     value.addEventListener('click',(e) => 
